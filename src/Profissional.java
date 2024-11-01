@@ -9,4 +9,10 @@ public class Profissional extends Pessoa {
     public String getProfissao() {
         return profissao;
     }
+
+    @Override
+    public String toString() {
+        return nome + ", Idade: " + idade + ", Profissão: " + profissao;
+    }
+
 }

@@ -18,7 +18,22 @@ public final class Consulta {
         this.profissional = profissional;
     }
 
-    public void realizarConsulta(){
-
+    public void realizarConsulta(Medico medico, Paciente paciente, LocalDate dataConsulta){
+        this.medico = medico;
+        this.paciente = paciente;
+        this.dataConsulta = dataConsulta;
     }
+
+    @Override
+    public String toString() {
+        return  "--------------Ficha--------------" +
+                "\nConsulta: " + dataConsulta + "\n\n" +
+                "Médico: " + medico.toString() + "\n" +
+                "Paciente: " + paciente.toString() + "\n\n" +
+                "Atendimento de enfermaria\n\n" +
+                "Profissional: " + profissional.toString() + "\n" +
+                "Paciente: " + paciente.toString()+ "\n" +
+                "--------------Agradecemos pela preferência--------------";
+    }
+
 }

@@ -9,4 +9,10 @@ public class Paciente extends Pessoa{
     public String getCondicaoPaciente() {
         return condicaoPaciente;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", Idade: " + idade + ", Condição: " + condicaoPaciente;
+    }
+
 }
